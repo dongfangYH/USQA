@@ -1,0 +1,13 @@
+### Problem-oriented
+
+A user story is considered **problem-oriented** when its description emphasizes the **user’s need or problem** rather than implementation details. Specifically:
+
+1. **No Implementation Details:**
+
+   * The `<Intention>` and `<Benefit>` fields must describe **what the user wants to achieve** and **why**, without specifying how the system will implement it.
+
+2. **Focus on the Problem:**
+
+   * The story should highlight the **user’s goal, pain point, or requirement**, keeping the narrative solution-independent.
+
+A problem-oriented user story ensures clarity of the **user need**, making it easier for the development team to explore multiple implementation options.

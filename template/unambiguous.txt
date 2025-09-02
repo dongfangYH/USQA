@@ -1,0 +1,11 @@
+### Accurate
+
+A user story is considered **accurate** when its description and acceptance criteria are **precise, clear, and free of ambiguity**. Specifically:
+
+1. **No Ambiguous Terms:**
+
+   * The `<Role>`, `<Intention>`, `<Benefit>`, `<Context>`, `<Event>`, and `<Expected Outcome>` fields must avoid vague or imprecise words such as “etc.,” “some,” “might,” or “may.”
+
+2. **Clear and Measurable Statements:**
+
+   * All statements in the story description and Gherkin-style acceptance criteria should be **specific, objective, and actionable**, leaving no room for multiple interpretations.
