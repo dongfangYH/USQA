@@ -1,14 +1,4 @@
 
-### Simple
+### Minimal
 
-A user story is considered **simple** when its description and intention are concise and unambiguous. Specifically:
-
-1. **Single Intention:**
-
-   * The `<Intention>` field represents **only one goal or action**.
-   * It must not combine multiple intentions in a single statement.
-
-2. **No Supplementary Information:**
-
-   * The `<Intention>` and `<Benefit>` fields must **not include extra descriptive text**, explanations, or unrelated details.
-   * Each field should clearly express its core meaning without additional context or commentary.
+A user story is **minimal** when its description contains **only Role, Intention, and Benefit**, with **no extra information or supplementary details** beyond these three elements.
