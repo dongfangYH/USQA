@@ -1,6 +1,6 @@
-### Accurate
+### Unambiguous
 
-A user story is considered **accurate** when its description and acceptance criteria are **precise, clear, and free of ambiguity**. Specifically:
+A user story is considered **unambiguous** when its description and acceptance criteria are **precise, clear, and free of ambiguity**. Specifically:
 
 1. **No Ambiguous Terms:**
 
