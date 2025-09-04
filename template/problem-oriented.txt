@@ -1,13 +1,9 @@
 ### Problem-oriented
 
-A user story is considered **problem-oriented** when its description emphasizes the **user’s need or problem** rather than implementation details. Specifically:
+A user story is **problem-oriented** when its **description** states a **need or problem to be solved** rather than prescribing a fixed implementation.
 
-1. **No Implementation Details:**
+* For **business-oriented stories**, `<R>` (Role), `<I>` (Intention), and `<B>` (Benefit) must describe the **user’s need and value**, not specific technical solutions.
+* For **technical stories**, `<R>` may represent a technical role (e.g., developer, system administrator, tester). `<I>` and `<B>` must still articulate the **underlying problem or goal** (e.g., system reliability, maintainability, scalability, performance), without embedding specific design choices or implementation details.
+* Explicit mentions of particular frameworks, algorithms, UI layouts, or infrastructure configurations that prescribe the solution violate this criterion.
 
-   * The `<Intention>` and `<Benefit>` fields must describe **what the user wants to achieve** and **why**, without specifying how the system will implement it.
-
-2. **Focus on the Problem:**
-
-   * The story should highlight the **user’s goal, pain point, or requirement**, keeping the narrative solution-independent.
-
-A problem-oriented user story ensures clarity of the **user need**, making it easier for the development team to explore multiple implementation options.
+**Key Principle:** Whether business-facing or technical, the story must emphasize **the problem and intended value**, leaving room for the team to determine **how** to implement the solution.
