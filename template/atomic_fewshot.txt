@@ -45,34 +45,22 @@ Then <Expected Outcome>
 
 ## Quality Criteria
 
-### Minimal
+### Atomic
 
-A user story is **minimal** when its description contains **only Role, Intention, and Benefit**, with **no extra information or supplementary details** beyond these three elements.
+A user story is **atomic** when its Intention description expresses the need for **exactly one feature**. It must not combine multiple independent requirements or features within a single story.
 
 ## Examples
 
-As a user with profile permission, I want to assign a profile to users, So that I can control their access.
+As a user, I want to login the system easily, without the need to manually type my username and password.
 Non-violation
 
-As a developer, I want an API to retrieve Site configuration, So that I can get `site name` and `site id` information.
+As an admin, I want to view API usage report, So that I can get to know each API usage and analyze the data.
 Non-violation
 
-As an admin, I want to filter out users that have been marked as inactive, So that I can get to know the inactive users.
-Non-violation
-
-As a worker, I want the system to display Work Instruction(WI), So that I can review the WI in case I forget it.
-Non-violation
-
-As a user, I want to login the system by scanning a QR code, So that I can access the system without typing my username and password.
-Non-violation
-
-As a user, I want to import users through uploading a file (csv, excel, json).
+As an admin, I want to import and export profiles, So that I can manage profiles more easily.
 Violation
 
-As a worker, I want the system to display Work Instruction, So that I can review the WI (in case I forget it).
-Violation
-
-As a user, I want to view my profile, So that I can get to know my information recorded. Information should include name, email and address.
+As a user, I want to have a reset icon at page or widget level, so that i can reset the ui display. 
 Violation
 
 ## Response Rules

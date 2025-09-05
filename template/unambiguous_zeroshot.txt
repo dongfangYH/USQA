@@ -45,9 +45,9 @@ Then <Expected Outcome>
 
 ## Quality Criteria
 
-### Atomic
+### Unambiguous
 
-A user story is **atomic** when its Intention description expresses the need for **exactly one feature**. It must not combine multiple independent requirements or features within a single story.
+A user story must be considered **unambiguous** when both its **description** and **acceptance criteria (AC)** avoid vague or imprecise terms that can lead to multiple interpretations.
 
 ## Response Rules
 

@@ -45,35 +45,23 @@ Then <Expected Outcome>
 
 ## Quality Criteria
 
-### Minimal
+### Atomic
 
-A user story is **minimal** when its description contains **only Role, Intention, and Benefit**, with **no extra information or supplementary details** beyond these three elements.
+A user story is **atomic** when its Intention description expresses the need for **exactly one feature**. It must not combine multiple independent requirements or features within a single story.
 
 ## Examples
 
-As a user with profile permission, I want to assign a profile to users, So that I can control their access.
-Non-violation
+As a user, I want to login the system easily, without the need to manually type my username and password.
+Non-violation — The Intention expresses **a single feature**: login without typing credentials. The phrase "without the need to manually type my username and password" is a clarification of *how* the login should be easy, not an additional independent feature.
 
-As a developer, I want an API to retrieve Site configuration, So that I can get `site name` and `site id` information.
-Non-violation
+As an admin, I want to view API usage report, So that I can get to know each API usage and analyze the data.
+Non-violation — The Intention is **one feature**: viewing the API usage report. The Benefit mentions two purposes (*get to know each API usage* and *analyze the data*), but this is acceptable because multiple benefits do not break atomicity; the Intention remains singular.
 
-As an admin, I want to filter out users that have been marked as inactive, So that I can get to know the inactive users.
-Non-violation
+As an admin, I want to import and export profiles, So that I can manage profiles more easily.
+Violation — The Intention combines **two independent features**: *import profiles* and *export profiles*. Each of these is a separate functional need, so the story is not atomic.
 
-As a worker, I want the system to display Work Instruction(WI), So that I can review the WI in case I forget it.
-Non-violation
-
-As a user, I want to login the system by scanning a QR code, So that I can access the system without typing my username and password.
-Non-violation
-
-As a user, I want to import users through uploading a file (csv, excel, json).
-Violation
-
-As a worker, I want the system to display Work Instruction, So that I can review the WI (in case I forget it).
-Violation
-
-As a user, I want to view my profile, So that I can get to know my information recorded. Information should include name, email and address.
-Violation
+As a user, I want to have a reset icon at page or widget level, so that I can reset the UI display.
+Violation — The Intention introduces **two distinct scopes** for the reset feature: *page level* and *widget level*. Since these are separate requirements, the story is not atomic.
 
 ## Response Rules
 

@@ -1,9 +1,0 @@
-### Unambiguous
-
-A user story must be considered **unambiguous** when both its **description** and **acceptance criteria (AC)** avoid vague or imprecise terms that can lead to multiple interpretations.
-
-* The `<R>` (Role), `<I>` (Intention), `<B>` (Benefit), `<C>` (Context), `<E>` (Event), and `<EO>` (Expected Outcome) fields must be expressed in **clear and precise language**.
-* Words or phrases that are **subjective, relative, or undefined** (e.g., *“fast,” “user-friendly,” “efficient,” “intuitive,” “etc.,” “and so on”*) are not allowed.
-* Each statement must describe **observable and verifiable conditions or outcomes**, so that different stakeholders interpret the story in the same way.
-
-**Key Principle:** An unambiguous user story eliminates interpretive uncertainty, ensuring consistent understanding across all team members.

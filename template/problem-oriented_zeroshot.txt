@@ -45,9 +45,9 @@ Then <Expected Outcome>
 
 ## Quality Criteria
 
-### Atomic
+### Problem-oriented
 
-A user story is **atomic** when its Intention description expresses the need for **exactly one feature**. It must not combine multiple independent requirements or features within a single story.
+A user story is **problem-oriented** when its **description** states a **need or problem to be solved** rather than prescribing the implementation details.
 
 ## Response Rules
 

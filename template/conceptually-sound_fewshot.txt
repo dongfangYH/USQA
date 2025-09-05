@@ -45,35 +45,18 @@ Then <Expected Outcome>
 
 ## Quality Criteria
 
-### Minimal
+### Conceptually Sound
 
-A user story is **minimal** when its description contains **only Role, Intention, and Benefit**, with **no extra information or supplementary details** beyond these three elements.
+A user story is **conceptually sound** when each of its key fields can be meaningfully interpreted according to their intended concepts:
 
-## Examples
+* `<R>` = **Role** → represents the actor or stakeholder.
+* `<I>` = **Intention** → represents the goal or action the role wants to achieve.
+* `<B>` = **Benefit** → represents the expected value or advantage gained.
+* `<C>` = **Context** → represents the preconditions or state of the system.
+* `<E>` = **Event** → represents the trigger or action performed.
+* `<EO>` = **Expected Outcome** → represents the observable result or system response.
 
-As a user with profile permission, I want to assign a profile to users, So that I can control their access.
-Non-violation
-
-As a developer, I want an API to retrieve Site configuration, So that I can get `site name` and `site id` information.
-Non-violation
-
-As an admin, I want to filter out users that have been marked as inactive, So that I can get to know the inactive users.
-Non-violation
-
-As a worker, I want the system to display Work Instruction(WI), So that I can review the WI in case I forget it.
-Non-violation
-
-As a user, I want to login the system by scanning a QR code, So that I can access the system without typing my username and password.
-Non-violation
-
-As a user, I want to import users through uploading a file (csv, excel, json).
-Violation
-
-As a worker, I want the system to display Work Instruction, So that I can review the WI (in case I forget it).
-Violation
-
-As a user, I want to view my profile, So that I can get to know my information recorded. Information should include name, email and address.
-Violation
+A story that fails to align its fields with these conceptual meanings is not considered conceptually sound.
 
 ## Response Rules
 
