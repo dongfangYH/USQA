@@ -1,0 +1,17 @@
+### Atomic
+
+A user story is **atomic** when its Intention description expresses the need for **exactly one feature**. It must not combine multiple independent requirements or features within a single story.
+
+## Examples
+
+As a user, I want to login the system easily, without the need to manually type my username and password.
+Non-violation — The Intention expresses **a single feature**: login without typing credentials. The phrase "without the need to manually type my username and password" is a clarification of *how* the login should be easy, not an additional independent feature.
+
+As an admin, I want to view API usage report, So that I can get to know each API usage and analyze the data.
+Non-violation — The Intention is **one feature**: viewing the API usage report. The Benefit mentions two purposes (*get to know each API usage* and *analyze the data*), but this is acceptable because multiple benefits do not break atomicity; the Intention remains singular.
+
+As an admin, I want to import and export profiles, So that I can manage profiles more easily.
+Violation — The Intention combines **two independent features**: *import profiles* and *export profiles*. Each of these is a separate functional need, so the story is not atomic.
+
+As a user, I want to have a reset icon at page or widget level, so that I can reset the UI display.
+Violation — The Intention introduces **two distinct scopes** for the reset feature: *page level* and *widget level*. Since these are separate requirements, the story is not atomic.

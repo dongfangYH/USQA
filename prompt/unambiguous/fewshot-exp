@@ -1,0 +1,26 @@
+### Unambiguous
+
+A user story must be considered **unambiguous** when both its **description** and **acceptance criteria (AC)** avoid vague or imprecise terms that can lead to multiple interpretations.
+
+## Examples
+
+As a customer, I want to reset my account password using a verification code sent to my email, So that I can regain access to my account.
+Non-violation — The Intention specifies the mechanism (*verification code via email*), and the Benefit is explicit (*regain access*). No fuzzy terms are used.
+
+As a production operator, I want the system to auto-save my work every 2 minutes, So that I don’t lose progress in case of a system crash.
+Non-violation — The frequency (*every 2 minutes*) is precise and measurable. The outcome (*don’t lose progress*) is concrete.
+
+Given a user enters an invalid password three times, When the login attempt fails, Then the account should be locked for 15 minutes.
+Non-violation — The conditions (*three times*), event (*login fails*), and expected outcome (*locked for 15 minutes*) are specific and testable.
+
+As a user, I want to be reminded to complete my profile, So that I can have a better experience.
+Violation — "Be reminded" is vague (unclear how the reminder appears), and "better experience" is subjective and untestable.
+
+As an operator, I want the dashboard to show reports quickly, So that I can make decisions faster.
+Violation — "Quickly" and "faster" are fuzzy. No benchmark (e.g., response time <2s) is given, making it unmeasurable.
+
+Given the user sets the display option to an appropriate value, When the page is loaded, Then the layout should look good on all devices.
+Violation — "Appropriate value”" and "look good" are highly subjective. No objective measure of correctness is provided.
+
+As a manager, I want the system to optimize scheduling, So that resource usage is maximized.
+Violation — "Optimize" and "maximize" are abstract. It’s unclear what metric defines success (e.g., reduce idle time by 20%).

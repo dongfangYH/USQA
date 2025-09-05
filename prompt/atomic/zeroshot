@@ -1,0 +1,3 @@
+### Atomic
+
+A user story is **atomic** when its Intention description expresses the need for **exactly one feature**. It must not combine multiple independent requirements or features within a single story.

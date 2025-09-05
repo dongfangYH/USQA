@@ -1,0 +1,17 @@
+### Atomic
+
+A user story is **atomic** when its Intention description expresses the need for **exactly one feature**. It must not combine multiple independent requirements or features within a single story.
+
+## Examples
+
+As a user, I want to login the system easily, without the need to manually type my username and password.
+Non-violation
+
+As an admin, I want to view API usage report, So that I can get to know each API usage and analyze the data.
+Non-violation
+
+As an admin, I want to import and export profiles, So that I can manage profiles more easily.
+Violation
+
+As a user, I want to have a reset icon at page or widget level, so that i can reset the ui display. 
+Violation

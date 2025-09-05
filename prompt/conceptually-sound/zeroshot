@@ -1,0 +1,12 @@
+### Conceptually Sound
+
+A user story is **conceptually sound** when each of its key fields can be meaningfully interpreted according to their intended concepts:
+
+* `<R>` = **Role** → represents the actor or stakeholder.
+* `<I>` = **Intention** → represents the goal or action the role wants to achieve.
+* `<B>` = **Benefit** → represents the expected value or advantage gained.
+* `<C>` = **Context** → represents the preconditions or state of the system.
+* `<E>` = **Event** → represents the trigger or action performed.
+* `<EO>` = **Expected Outcome** → represents the observable result or system response.
+
+A story that fails to align its fields with these conceptual meanings is not considered conceptually sound.

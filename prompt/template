@@ -45,16 +45,7 @@ Then <Expected Outcome>
 
 ## Quality Criteria
 
-### Well-formed
-
-A user story must be considered **well-formed** when its description contains the essential structural elements.
-
-Specifically, the description must explicitly include at least:
-
-* Role (R) – the actor or stakeholder who benefits from the story.
-* Intention (I) – the goal or capability that the role seeks to achieve.
-
-Without both elements, the story cannot be regarded as well-formed.
+$quality_criteria
 
 ## Response Rules
 

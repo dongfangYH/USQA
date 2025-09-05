@@ -1,0 +1,26 @@
+### Unambiguous
+
+A user story must be considered **unambiguous** when both its **description** and **acceptance criteria (AC)** avoid vague or imprecise terms that can lead to multiple interpretations.
+
+## Examples
+
+As a customer, I want to reset my account password using a verification code sent to my email, So that I can regain access to my account.
+Non-violation
+
+As a production operator, I want the system to auto-save my work every 2 minutes, So that I don’t lose progress in case of a system crash.
+Non-violation
+
+Given a user enters an invalid password three times, When the login attempt fails, Then the account should be locked for 15 minutes.
+Non-violation
+
+As a user, I want to be reminded to complete my profile, So that I can have a better experience.
+Violation
+
+As an operator, I want the dashboard to show reports quickly, So that I can make decisions faster.
+Violation
+
+Given the user sets the display option to an appropriate value, When the page is loaded, Then the layout should look good on all devices.
+Violation
+
+As a manager, I want the system to optimize scheduling, So that resource usage is maximized.
+Violation
