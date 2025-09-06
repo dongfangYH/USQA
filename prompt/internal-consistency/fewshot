@@ -1,0 +1,26 @@
+### Internal Consistency
+
+A user story is **internal-consistency** when its **description** is logically aligned and free of contradictions.
+
+## Examples
+
+As a production supervisor, I want to generate daily shift reports, so that I can track operator performance and identify bottlenecks.
+→ Non-violation
+
+As a warehouse manager, I want to scan barcodes during receiving, so that I can ensure accurate stock updates in the inventory system.
+→ Non-violation
+
+As a QA engineer and auditor, I want to export defect logs, so that I can review compliance data offline.
+→ Non-violation
+
+As a user, I want to configure the dashboard layout, so that the system automatically optimizes widget placement.
+→ Violation
+
+As a line operator, I want to adjust test parameters, so that engineers can validate the new settings.
+→ Violation
+
+As a product owner, I want to approve feature requests, so that the database can record approval timestamps.
+→ Violation
+
+As a user, I want to disable email notifications, so that I can continue to receive fewer alerts in my inbox.
+→ Violation
