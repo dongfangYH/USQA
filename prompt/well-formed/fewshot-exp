@@ -1,0 +1,27 @@
+### Well-formed
+
+A user story must be considered **well-formed** when its description contains the essential structural elements.
+
+Specifically, the description must explicitly include at least:
+
+* Role (R) – the actor or stakeholder who benefits from the story.
+* Intention (I) – the goal or capability that the role seeks to achieve.
+
+Without both elements, the story cannot be regarded as well-formed.
+
+## Examples
+
+As a user, I want to assign profiles to users.
+Non-violation — The story description contains Role (*user*) and Intention (*assign a profile to users*).
+
+As an admin, I want a language icon, So that I can switch languages.
+Non-violation — The story description contains Role (*admin*) and Intention (*want a language icon*).
+
+As a user, I don't want non-friend users to view my profile, so that I can protect my personal privacy and feel safe sharing content.
+Non-violation — The story description contains Role (*user*) and Intention (*prevent non-friend users from viewing my profile*).
+
+I want to login the system without manually typing username and password.
+Violation — Missing Role element.
+
+I can't login the system.
+Violation — Missing Role and Intention element.
