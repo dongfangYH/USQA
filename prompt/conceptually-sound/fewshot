@@ -10,3 +10,39 @@ A user story is **conceptually sound** when each of its key fields can be meanin
 * `<EO>` = **Expected Outcome** → represents the observable result or system response.
 
 A story that fails to align its fields with these conceptual meanings is not considered conceptually sound.
+
+## Examples
+
+Story Description:
+As a project manager, I want to generate weekly progress reports, so that I can share updates with stakeholders.
+
+Justification: → Non-violation
+
+---
+
+Story Description:
+As a system, I want to store API logs, so that the database table grows with every request.
+
+Justification: → Violation
+
+---
+
+Acceptance Criteria:
+```
+Given the user is logged in,  
+When the user clicks "Download Report",  
+Then the system generates a PDF report with today’s data.  
+```
+
+Justification: → Non-violation
+
+---
+
+Acceptance Criteria:
+```
+Given the user has answered the checklist with failures,  
+When the checklist is in failed state,  
+Then the system ensures quality.  
+```
+
+Justification: → Violation
