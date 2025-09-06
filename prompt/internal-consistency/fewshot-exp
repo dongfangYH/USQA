@@ -1,0 +1,26 @@
+### Internal Consistency
+
+A user story is **internal-consistency** when its **description** is logically aligned and free of contradictions.
+
+## Examples
+
+As a production supervisor, I want to generate daily shift reports, so that I can track operator performance and identify bottlenecks.
+→ Non-violation: The Role (*supervisor*), Intention, and Benefit are logically aligned.
+
+As a warehouse manager, I want to scan barcodes during receiving, so that I can ensure accurate stock updates in the inventory system.
+→ Non-violation: The Role (*manager*) aligns with both the action and the resulting benefit.
+
+As a QA engineer and auditor, I want to export defect logs, so that I can review compliance data offline.
+→ Non-violation: Multiple Roles are consistent with the Intention and Benefit, no contradiction exists.
+
+As a user, I want to configure the dashboard layout, so that the system automatically optimizes widget placement.
+→ Violation: The Intention belongs to the user, but the Benefit centers on the system’s action, not the user’s gain.
+
+As a line operator, I want to adjust test parameters, so that engineers can validate the new settings.
+→ Violation: The Role (*operator*) is misaligned with the Benefit (*engineers*). The value does not return to the Role.
+
+As a product owner, I want to approve feature requests, so that the database can record approval timestamps.
+→ Violation: The Benefit is described from the perspective of the database, not the Role, causing inconsistency.
+
+As a user, I want to disable email notifications, so that I can continue to receive fewer alerts in my inbox.
+→ Violation: The Intention (disable notifications) contradicts the Benefit (continue to receive alerts).
