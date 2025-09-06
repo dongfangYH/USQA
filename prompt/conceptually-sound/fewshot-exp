@@ -1,0 +1,63 @@
+### Conceptually Sound
+
+A user story is **conceptually sound** when each of its key fields can be meaningfully interpreted according to their intended concepts:
+
+* `<R>` = **Role** → represents the actor or stakeholder.
+* `<I>` = **Intention** → represents the goal or action the role wants to achieve.
+* `<B>` = **Benefit** → represents the expected value or advantage gained.
+* `<C>` = **Context** → represents the preconditions or state of the system.
+* `<E>` = **Event** → represents the trigger or action performed.
+* `<EO>` = **Expected Outcome** → represents the observable result or system response.
+
+A story that fails to align its fields with these conceptual meanings is not considered conceptually sound.
+
+## Examples
+
+Story Description:
+As a project manager, I want to generate weekly progress reports, so that I can share updates with stakeholders.
+
+Justification: → Non-violation
+
+* `<R>` = *project manager* → valid role.
+* `<I>` = *generate weekly progress reports* → clear intention.
+* `<B>` = *share updates with stakeholders* → meaningful benefit.
+
+---
+
+Story Description:
+As a system, I want to store API logs, so that the database table grows with every request.
+
+Justification: → Violation
+* `<R>` = *system* → invalid role.
+* `<I>` = *store API logs* → technical action, not a user’s intention.
+* `<B>` = *database table grows* → describes *how*, not *why*.
+
+---
+
+Acceptance Criteria:
+```
+Given the user is logged in,  
+When the user clicks "Download Report",  
+Then the system generates a PDF report with today’s data.  
+```
+
+Justification: → Non-violation
+  
+* `<C>` = *user is logged in* → valid context.
+* `<E>` = *user clicks "Download Report"* → clear event.
+* `<EO>` = *system generates a PDF report with today’s data* → measurable outcome.
+
+---
+
+Acceptance Criteria:
+```
+Given the user has answered the checklist with failures,  
+When the checklist is in failed state,  
+Then the system ensures quality.  
+```
+
+Justification: → Violation
+
+* `<C>` = *user has answered the checklist with failures* → precondition, fine.
+* `<E>` = *checklist is in failed state* → **not an event** (it’s a state).
+* `<EO>` = *system ensures quality* → vague, not observable or testable.
