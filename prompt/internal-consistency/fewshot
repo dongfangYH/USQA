@@ -4,23 +4,32 @@ A user story is **internal-consistency** when its **description** is logically a
 
 ## Examples
 
-As a production supervisor, I want to generate daily shift reports, so that I can track operator performance and identify bottlenecks.
-→ Non-violation
+As a customer, I want to save items to a wishlist, so that I can purchase them later.
+// Non-violation
 
-As a warehouse manager, I want to scan barcodes during receiving, so that I can ensure accurate stock updates in the inventory system.
-→ Non-violation
+As an administrator, I want to assign user roles, so that employees receive appropriate access rights.
+// Non-violation
 
-As a QA engineer and auditor, I want to export defect logs, so that I can review compliance data offline.
-→ Non-violation
+As a nurse, I want to view a patient’s medication history, so that I can administer the correct dose.
+// Non-violation
 
-As a user, I want to configure the dashboard layout, so that the system automatically optimizes widget placement.
-→ Violation
+As a warehouse clerk, I want to mark orders as packed, so that shipping can proceed on schedule.
+// Non-violation
 
-As a line operator, I want to adjust test parameters, so that engineers can validate the new settings.
-→ Violation
+As a data analyst, I want access to raw export files, so that I can validate reported metrics.
+// Non-violation
 
-As a product owner, I want to approve feature requests, so that the database can record approval timestamps.
-→ Violation
+As a customer, I want to enable database replication, so that the cluster maintains high availability.
+// Violation
 
-As a user, I want to disable email notifications, so that I can continue to receive fewer alerts in my inbox.
-→ Violation
+As a support agent, I want to run nightly maintenance scripts, so that the system archive is compacted.
+// Violation
+
+As a tester, I want to support the new validation framework, so that tests pass across environments.
+// Violation
+
+As a clerk, I want to approve vendor invoices, so that we can reduce accounting workload.
+// Violation
+
+As a user, I want to disable notifications, so that I still receive critical alerts.
+// Violation

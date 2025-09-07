@@ -1,0 +1,35 @@
+### Problem-oriented
+
+A user story is **problem-oriented** when its **description** states a **need or problem to be solved** rather than prescribing the implementation details.
+
+## Examples
+
+As a project manager, I want to track overdue tasks separately, so that I can focus on risks in the schedule.
+→ Non-violation
+
+As a customer, I want to pause my subscription temporarily, so that I don’t lose data when I’m away.
+→ Non-violation
+
+As a teacher, I want to see all assignments pending review, so that I can plan my grading workload.
+→ Non-violation
+
+As a warehouse worker, I want to know which items are running low in stock, so that I can request replenishment in time.
+→ Non-violation
+
+As a mobile user, I want to recover access if I forget my password, so that I don’t get locked out of my account.
+→ Non-violation
+
+As a project manager, I want a red `Overdue` badge in the task table header, so that I can quickly notice overdue tasks.
+→ Violation
+
+As a customer, I want a **pause button on the billing page that disables auto-renewal for 30 days**, so that I can stop my subscription temporarily.
+→ Violation
+
+As a teacher, I want a **filter dropdown on the Assignments page showing `Pending Review`**, so that I can find assignments faster.
+→ Violation
+
+As a warehouse worker, I want the system to **send me a push notification and an email alert whenever stock < 10 items**, so that I can request replenishment.
+→ Violation
+
+As a mobile user, I want a **`Forgot Password?` link that sends me a 6-digit SMS code**, so that I can reset my credentials.
+→ Violation

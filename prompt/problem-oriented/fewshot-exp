@@ -1,0 +1,35 @@
+### Problem-oriented
+
+A user story is **problem-oriented** when its **description** states a **need or problem to be solved** rather than prescribing the implementation details.
+
+## Examples
+
+As a project manager, I want to track overdue tasks separately, so that I can focus on risks in the schedule.
+→ Non-violation: States a need, no mention of how the UI or database does it.
+
+As a customer, I want to pause my subscription temporarily, so that I don’t lose data when I’m away.
+→ Non-violation: Expresses capability, not mechanism.
+
+As a teacher, I want to see all assignments pending review, so that I can plan my grading workload.
+→ Non-violation: Problem-focused, avoids prescribing dashboards, filters, etc.
+
+As a warehouse worker, I want to know which items are running low in stock, so that I can request replenishment in time.
+→ Non-violation: States the problem (stock visibility), not how alerts should appear.
+
+As a mobile user, I want to recover access if I forget my password, so that I don’t get locked out of my account.
+→ Non-violation: Capability expressed; no details about reset links, OTP, or UI.
+
+As a project manager, I want a red `Overdue` badge in the task table header, so that I can quickly notice overdue tasks.
+→ Violation: Prescribes specific UI design.
+
+As a customer, I want a **pause button on the billing page that disables auto-renewal for 30 days**, so that I can stop my subscription temporarily.
+→ Violation: Hard-coded implementation details.
+
+As a teacher, I want a **filter dropdown on the Assignments page showing `Pending Review`**, so that I can find assignments faster.
+→ Violation: Specific UI control.
+
+As a warehouse worker, I want the system to **send me a push notification and an email alert whenever stock < 10 items**, so that I can request replenishment.
+→ Violation: Specific thresholds and notification channels.
+
+As a mobile user, I want a **`Forgot Password?` link that sends me a 6-digit SMS code**, so that I can reset my credentials.
+→ Violation: Prescribes reset flow and channel.

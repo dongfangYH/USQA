@@ -1,12 +1,19 @@
 ### Conceptually Sound
 
-A user story is **conceptually sound** when each of its key fields can be meaningfully interpreted according to their intended concepts:
+A user story is **conceptually sound** when each of its key fields (when present) expresses the *intended concept*:
 
-* `<R>` = **Role** → represents the actor or stakeholder.
-* `<I>` = **Intention** → represents the goal or action the role wants to achieve.
-* `<B>` = **Benefit** → represents the expected value or advantage gained.
-* `<C>` = **Context** → represents the preconditions or state of the system.
-* `<E>` = **Event** → represents the trigger or action performed.
-* `<EO>` = **Expected Outcome** → represents the observable result or system response.
+* `<R>` = **Role** → an actor or stakeholder (who).
+* `<I>` = **Intention** → a goal or action the role wants (what).
+* `<B>` = **Benefit** → the value or advantage gained (why).
+* `<C>` = **Context** → a condition or pre-state (Given).
+* `<E>` = **Event** → a triggering action (When).
+* `<EO>` = **Expected Outcome** → an observable result or system response (Then).
 
-A story that fails to align its fields with these conceptual meanings is not considered conceptually sound.
+Important scope:
+* Only check whether each field *expresses* its concept. Do **not** judge: completeness, quality, technical detail, feasibility, or who performs implementation.
+* A field is **conceptually sound** if it clearly maps to its corresponding concept above.
+* A whole story is **conceptually sound** only if **all** its fields (that appear) are conceptually sound.
+
+* For each field that exists, ask:"Does this phrase answer the corresponding conceptual question (who / what / why / given / when / then)?"
+  * If yes → the field is conceptually sound.
+  * If any field is not → the story is **not** conceptually sound.

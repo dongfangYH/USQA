@@ -4,23 +4,32 @@ A user story is **internal-consistency** when its **description** is logically a
 
 ## Examples
 
-As a production supervisor, I want to generate daily shift reports, so that I can track operator performance and identify bottlenecks.
-→ Non-violation: The Role (*supervisor*), Intention, and Benefit are logically aligned.
+As a customer, I want to save items to a wishlist, so that I can purchase them later.
+// Non-violation: Role (customer), Intention (save items), and Benefit (purchase later) are aligned and refer to the same actor.
 
-As a warehouse manager, I want to scan barcodes during receiving, so that I can ensure accurate stock updates in the inventory system.
-→ Non-violation: The Role (*manager*) aligns with both the action and the resulting benefit.
+As an administrator, I want to assign user roles, so that employees receive appropriate access rights.
+// Non-violation: Administrator performs the action and receives the corresponding benefit; no actor mismatch.
 
-As a QA engineer and auditor, I want to export defect logs, so that I can review compliance data offline.
-→ Non-violation: Multiple Roles are consistent with the Intention and Benefit, no contradiction exists.
+As a nurse, I want to view a patient’s medication history, so that I can administer the correct dose.
+// Non-violation: Nurse is the actor, the intention is clear, and the benefit pertains to the nurse’s work—logically consistent.
 
-As a user, I want to configure the dashboard layout, so that the system automatically optimizes widget placement.
-→ Violation: The Intention belongs to the user, but the Benefit centers on the system’s action, not the user’s gain.
+As a warehouse clerk, I want to mark orders as packed, so that shipping can proceed on schedule.
+// Non-violation: The clerk’s action produces the stated benefit; actor, action, and benefit are coherent.
 
-As a line operator, I want to adjust test parameters, so that engineers can validate the new settings.
-→ Violation: The Role (*operator*) is misaligned with the Benefit (*engineers*). The value does not return to the Role.
+As a data analyst, I want access to raw export files, so that I can validate reported metrics.
+// Non-violation: The role requests a capability and the benefit explains how that role gains value—consistent.
 
-As a product owner, I want to approve feature requests, so that the database can record approval timestamps.
-→ Violation: The Benefit is described from the perspective of the database, not the Role, causing inconsistency.
+As a customer, I want to enable database replication, so that the cluster maintains high availability.
+// Violation: A customer cannot *enable* a database-level capability; the Intention assigns an action that logically belongs to system administrators, causing role–action mismatch.
 
-As a user, I want to disable email notifications, so that I can continue to receive fewer alerts in my inbox.
-→ Violation: The Intention (disable notifications) contradicts the Benefit (continue to receive alerts).
+As a support agent, I want to run nightly maintenance scripts, so that the system archive is compacted.
+// Violation: The Intention implies the agent performs technical system tasks (running scripts), while the Benefit is described as a system behavior—responsibilities and subjects are misaligned.
+
+As a tester, I want to support the new validation framework, so that tests pass across environments.
+// Violation: The verb "support" targets a feature or system capability; a human role cannot logically *support* a framework in the same conceptual sense, so the Intention is phrased incorrectly.
+
+As a clerk, I want to approve vendor invoices, so that we can reduce accounting workload.
+// Violation: The Benefit uses "we" (an ambiguous collective) while the Role is an individual clerk; the stated benefit’s subject and the Role are misaligned and may imply responsibilities beyond the clerk’s scope.
+
+As a user, I want to disable notifications, so that I still receive critical alerts.
+// Violation:  The Intention (disable notifications) directly contradicts the Benefit (still receive alerts), producing an internal contradiction between action and expected outcome.

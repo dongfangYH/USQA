@@ -4,23 +4,140 @@ A user story must be considered **unambiguous** when both its **description** an
 
 ## Examples
 
-As a customer, I want to reset my account password using a verification code sent to my email, So that I can regain access to my account.
-Non-violation — The Intention specifies the mechanism (*verification code via email*), and the Benefit is explicit (*regain access*). No fuzzy terms are used.
+Story:
+As a quality inspector, I want to mark failed tests, so that I can queue them for immediate review.
 
-As a production operator, I want the system to auto-save my work every 2 minutes, So that I don’t lose progress in case of a system crash.
-Non-violation — The frequency (*every 2 minutes*) is precise and measurable. The outcome (*don’t lose progress*) is concrete.
+Acceptance Criteria:
+```
+Given the test run is completed  
+When the inspector clicks "Mark Failed" on a test result  
+Then the test is added to the Review queue with a timestamp and inspector name
+```
 
-Given a user enters an invalid password three times, When the login attempt fails, Then the account should be locked for 15 minutes.
-Non-violation — The conditions (*three times*), event (*login fails*), and expected outcome (*locked for 15 minutes*) are specific and testable.
+Non-violation: All terms are specific and testable. The action and expected result are concrete (queue with timestamp), so there is no vague wording.
 
-As a user, I want to be reminded to complete my profile, So that I can have a better experience.
-Violation — "Be reminded" is vague (unclear how the reminder appears), and "better experience" is subjective and untestable.
+---
 
-As an operator, I want the dashboard to show reports quickly, So that I can make decisions faster.
-Violation — "Quickly" and "faster" are fuzzy. No benchmark (e.g., response time <2s) is given, making it unmeasurable.
+Story:
+As a report author, I want the form to prevent submission when date fields are empty, so that reports always include required date values.
 
-Given the user sets the display option to an appropriate value, When the page is loaded, Then the layout should look good on all devices.
-Violation — "Appropriate value”" and "look good" are highly subjective. No objective measure of correctness is provided.
+Acceptance Criteria:
+```
+Given the report form is open  
+When the user submits the form with any required date field blank  
+Then the form blocks submission and displays a validation message listing missing date fields
+```
 
-As a manager, I want the system to optimize scheduling, So that resource usage is maximized.
-Violation — "Optimize" and "maximize" are abstract. It’s unclear what metric defines success (e.g., reduce idle time by 20%).
+Non-violation: The story and AC avoid subjective phrases. "Prevent submission" and "list missing date fields" are precise and unambiguous.
+
+---
+
+Story:
+As an administrator, I want column widths to be adjustable in the audit log view, so that long messages are fully visible.
+
+Acceptance Criteria:
+```
+Given the audit log page is displayed  
+When the admin drags a column edge to resize it  
+Then log messages in that column show full text up to 512 characters without truncation
+```
+
+Non-violation: AC specifies a measurable outcome (up to 512 characters), removing ambiguity about "fully visible".
+
+---
+
+Story:
+As a support agent, I want a searchable dropdown for error codes, so that I can locate the correct code by typing part of its name.
+
+Acceptance Criteria:
+```
+Given the error-code dropdown is open  
+When the agent types a query of three or more characters  
+Then the list filters to codes whose name or description contains the query
+```
+
+Non-violation: The intent and AC define precise behavior (three or more characters, matching name/description), so "searchable" is clarified and not vague.
+
+---
+
+Story:
+As a field technician, I want to see current and historical device status, so that I can decide follow-up actions.
+
+Acceptance Criteria:
+```
+Given device telemetry is available  
+When the technician views the device page  
+Then the UI shows the latest status and a timestamped history of the last 7 days
+```
+
+Non-violation: "Current and historical" is given a clear, measurable meaning (last 7 days), so ambiguity is eliminated.
+
+---
+
+Story:
+As an operator, I want the page header hidden so the interface stays "optimized", maximizing usable space for tasks.
+
+Acceptance Criteria:
+```
+Given the operator is on the dashboard  
+When the header is toggled off  
+Then the interface appears optimized without layout problems
+```
+
+Violation: Terms like "optimized" and "appears optimized" are subjective and untestable — the AC does not define what "optimized" or "layout problems" means.
+
+---
+
+Story:
+As a product owner, I want to add some kind of notice to AI-generated content, so that viewers treat results with care.
+
+Acceptance Criteria:
+```
+Given AI content is displayed  
+When content is produced  
+Then show a notice of some kind
+```
+
+Violation: Phrases "some kind of notice" and "treat results with care" are vague. The AC does not specify the notice type, location, or exact message, so it is ambiguous.
+
+---
+
+Story:
+As a site engineer, I want the system to handle high traffic and respond quickly, so that performance stays acceptable.
+
+Acceptance Criteria:
+```
+Given heavy load conditions  
+When users interact with the dashboard  
+Then the system responds quickly and remains usable under high volume
+```
+
+Violation: "Respond quickly",  "acceptable" and "high volume" are undefined and unmeasurable — the AC lacks specific thresholds or metrics.
+
+---
+
+Story:
+As an admin, I want the bulk option to accept any value for the display setting, so that reports reflect that option.
+
+Acceptance Criteria:
+```
+Given the bulk control is used  
+When any value is entered in the display option  
+Then the report uses that bulk value
+```
+
+Violation: The phrase "any value" is ambiguous (type, range, format unknown). The AC must specify allowed types or constraints to be unambiguous.
+
+---
+
+Story:
+As an integrator, I want to trigger local tasks or respond to external events, so that the workflow can run automatically.
+
+Acceptance Criteria:
+```
+Given a trigger is available  
+When the trigger occurs  
+Then local tasks run or the system reacts appropriately
+```
+
+Violation: The intention is ambiguous: does the story require user-triggered local tasks, reactions to external events, or both? The AC's  "or" and "react appropriately" are unclear and lead to multiple interpretations.
