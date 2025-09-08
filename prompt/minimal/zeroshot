@@ -1,3 +1,3 @@
 ### Minimal
 
-A user story is **minimal** when its description contains **only Role, Intention, and Benefit**, with **no extra information or supplementary details** beyond these three elements.
+A user story is **minimal** when its description contains nothing a Role, Intentions and, optionally, Benefits. Any additional information such as comments, descriptions of the expected behavior or testing hints are to be captured as additional notes.
