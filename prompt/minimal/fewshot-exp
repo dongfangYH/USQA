@@ -1,29 +1,26 @@
 ### Minimal
 
-A user story is **minimal** when its description contains **only Role, Intention, and Benefit**, with **no extra information or supplementary details** beyond these three elements.
+A user story is **minimal** when its description contains nothing a Role, Intentions and, optionally, Benefits. Any additional information such as comments, descriptions of the expected behavior or testing hints are to be captured as additional notes.
 
 ## Examples
 
 As a user with profile permission, I want to assign a profile to users, So that I can control their access.
-Non-violation — The story description strictly contains Role (*user with profile permission*), Intention (*assign a profile to users*), and Benefit (*control their access*). No extra or supplementary details.
+// Non-violation: The story description strictly contains Role (*user with profile permission*), Intention (*assign a profile to users*), and Benefit (*control their access*). No extra or supplementary details.
 
 As a developer, I want an API to retrieve Site configuration, So that I can get `site name` and `site id` information.
-Non-violation* — Although `site name` and `site id` are mentioned, they are **integral to the stated benefit** and not an additional explanation. The description still fits Role, Intention, Benefit only.
+// Non-violation: Although `site name` and `site id` are mentioned, they are **integral to the stated benefit** and not an additional note. The description still fits Role, Intention, Benefit only.
 
 As an admin, I want to filter out users that have been marked as inactive, So that I can get to know the inactive users.
-Non-violation* — Clean separation of Role, Intention, and Benefit. No extra explanatory details outside the three core fields.
+// Non-violation: Clean separation of Role, Intention, and Benefit. No extra explanatory details outside the three core fields.
 
 As a worker, I want the system to display Work Instruction (WI), So that I can review the WI in case I forget it.
-Non-violation — The acronym (WI) is an acceptable shorthand, not supplementary information. The Intention and Benefit remain concise and minimal.
+// Non-violation: The acronym (WI) is an acceptable shorthand, not regareded as a supplementary information. The Intention and Benefit remain concise and minimal.
 
 As a user, I want to login the system by scanning a QR code, So that I can access the system without typing my username and password.
-Non-violation — The method (QR code) is part of the **Intention** itself, not a supplementary explanation. No extra narrative beyond Role, Intention, and Benefit.
+// Non-violation: The method (by scanning a QR code) is part of the **Intention** itself, not a supplementary explanation. No extra narrative beyond Role, Intention, and Benefit.
 
 As a user, I want to import users through uploading a file (csv, excel, json).
-Violation — The file types (*csv, excel, json*) are supplementary technical details beyond the core Intention. This makes the story description non-minimal.
+// Violation: The file types (*csv, excel, json*) are supplementary details wrapped by `()`.
 
-As a worker, I want the system to display Work Instruction, So that I can review the WI (in case I forget it).
-Violation — The phrase "in case I forget it" is supplementary justification embedded inside the Benefit. This extra description violates minimality.
-
-As a user, I want to view my profile, So that I can get to know my information recorded. Information should include name, email and address.**
-Violation — The second sentence ("Information should include name, email and address") is an additional explanatory statement outside the Role-Intention-Benefit format.
+As a user, I want to view my profile, So that I can get to know my information recorded. Information should include name, email and address.
+// Violation: The second sentence ("Information should include name, email and address") is an additional notes for the user story.
