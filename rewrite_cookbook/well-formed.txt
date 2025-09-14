@@ -1,0 +1,10 @@
+Well-formed Violation Rewrite Examples:
+
+Example 1:
+
+Original (Violation: Missing Role):
+I want to login the system without manually typing username and password.*
+
+Rewrite (Well-formed compliant):
+As a registered user, I want to login the system without manually typing my username and password, So that I can access my account faster.
+---

@@ -1,0 +1,52 @@
+Unambiguous Violation Rewrite Examples:
+
+Example 1:
+
+Original (Unambiguous Violation: Subjective terms):
+```
+As an operator, I want the page header hidden so the interface stays "optimized", maximizing usable space for tasks.
+
+Acceptance Criteria:
+
+Given the operator is on the dashboard
+When the header is toggled off
+Then the interface appears optimized without layout problems
+```
+
+Rewrite (Unambiguous compliant):
+```
+As an operator, I want the page header hidden so that I have more workspace for dashboard tasks.
+
+Acceptance Criteria:
+
+Given the operator is on the dashboard
+When the header is toggled off
+Then the visible workspace increases by at least 15% without overlapping or truncating widgets
+```
+
+---
+Example 2:
+
+Original (Unambiguous Violation: Vague quantifiers and undefined behavior):
+
+```
+As a product owner, I want to add some kind of notice to AI-generated content, so that viewers treat results with care.
+
+Acceptance Criteria:
+
+Given AI content is displayed
+When content is produced
+Then show a notice of some kind
+```
+
+Rewrite (Unambiguous compliant):
+
+```
+As a product owner, I want a standardized disclaimer attached to all AI-generated content, so that viewers understand the content is machine-produced and should be verified.
+
+Acceptance Criteria:
+
+Given AI content is displayed
+When content is produced
+Then a banner labeled "AI-generated: verify before use" appears above the content in bold text
+```

@@ -1,0 +1,21 @@
+Atomic Violation Rewrite Examples:
+
+Example 1:
+
+Original (Atomic Violation: Two independent features):
+As an admin, I want to import and export profiles, So that I can manage profiles more easily.
+
+Rewrite (Atomic compliant):
+As an admin, I want to import profiles, So that I can manage profiles more easily.
+As an admin, I want to export profiles, So that I can manage profiles more easily.
+
+---
+
+Example 2:
+
+Original (Atomic Violation: Multiple scopes for one feature):
+As a user, I want to have a reset icon at page or widget level, so that I can reset the UI display.
+
+Rewrite (Atomic-compliant):
+As a user, I want to have a reset icon at the page level, so that I can reset the UI display.
+As a user, I want to have a reset icon at the widget level, so that I can reset the UI display.

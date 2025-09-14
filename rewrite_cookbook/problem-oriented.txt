@@ -1,0 +1,73 @@
+
+---
+Problem-oriented Violation Rewrite Examples:
+
+Example 1:
+
+Original (Problem-oriented Violation: Prescribes UI design and color):
+As a project manager, I want a red `Overdue` badge in the task table header, so that I can quickly notice overdue tasks.
+
+Rewrite (Problem-oriented compliant):
+```
+As a project manager, I want to identify overdue tasks, so that I can quickly notice scheduling risks.
+
+Acceptance Criteria:
+
+Given the task table is displayed
+When tasks are overdue
+Then they are visually distinguishable (e.g., red badge or icon) to draw attention
+```
+
+---
+Example 2:
+
+Original (Problem-oriented Violation: Hard-coded implementation and duration):
+As a customer, I want a pause button on the billing page that disables auto-renewal for 30 days, so that I can stop my subscription temporarily.
+
+Rewrite (Problem-oriented compliant):
+```
+As a customer, I want to pause my subscription temporarily, so that I can stop payments without losing my data.
+
+Acceptance Criteria:
+
+Given a subscription is active
+When the customer requests a pause
+Then the subscription is temporarily suspended for 30 days
+And the customer’s data remains intact
+```
+
+---
+Example 3:
+
+Original (Problem-oriented Violation: Specific UI control):
+As a teacher, I want a filter dropdown on the Assignments page showing `Pending Review`, so that I can find assignments faster.
+
+Rewrite (Problem-oriented compliant):
+```
+As a teacher, I want to easily locate assignments pending review, so that I can manage grading efficiently.
+
+Acceptance Criteria:
+
+Given assignments exist
+When the teacher views assignments
+Then assignments pending review can be filtered or highlighted
+And the mechanism (dropdown, search box, or table filter) is left to implementation
+```
+
+---
+Example 4:
+
+Original (Problem-oriented Violation: Prescribes notification mechanisms and threshold):
+As a warehouse worker, I want the system to send me a push notification and an email alert whenever stock < 10 items, so that I can request replenishment.
+
+Rewrite (Problem-oriented compliant):
+```
+As a warehouse worker, I want to know when stock levels are low, so that I can request replenishment in time.
+
+Acceptance Criteria:
+
+Given stock levels are being monitored
+When any item falls below 10 units
+Then the warehouse worker is notified
+And notifications are sent via available channels (e.g., email, push)
+```

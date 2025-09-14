@@ -1,0 +1,125 @@
+Internal Consistency Violation Rewrite Examples:
+
+Example 1:
+
+Original (Internal Consistency Violation: Role–Action mismatch):
+```
+As a customer, I want to enable database replication, so that the cluster maintains high availability.
+
+Acceptance Criteria:
+
+Given a database cluster exists
+When the customer attempts to enable replication
+Then replication is enabled
+```
+
+Rewrite (Internal consistency compliant):
+```
+As a database administrator, I want to enable database replication, so that the cluster maintains high availability.
+
+Acceptance Criteria:
+
+Given a database cluster exists
+When the administrator enables replication
+Then the cluster maintains high availability
+```
+
+---
+Example 2:
+
+Original (Internal Consistency Violation: Role–Action mismatch / system task):
+```
+As a support agent, I want to run nightly maintenance scripts, so that the system archive is compacted.
+
+Acceptance Criteria:
+
+Given nightly maintenance is scheduled
+When the agent runs maintenance scripts
+Then the system archive is compacted
+```
+
+Rewrite (Internal consistency compliant):
+```
+As a system administrator, I want to schedule nightly maintenance scripts, so that the system archive is compacted.
+
+Acceptance Criteria:
+
+Given nightly maintenance is configured
+When the system executes maintenance scripts
+Then the system archive is compacted
+```
+
+---
+Example 3:
+
+Original (Internal Consistency Violation: Intention phrasing ambiguous / human cannot "support" a framework):
+```
+As a tester, I want to support the new validation framework, so that tests pass across environments.
+
+Acceptance Criteria:
+
+Given the validation framework is deployed
+When the tester executes tests
+Then tests pass across environments
+```
+
+Rewrite (Internal consistency compliant):
+```
+As a tester, I want to execute tests using the new validation framework, so that tests pass across environments.
+
+Acceptance Criteria:
+
+Given the validation framework is deployed
+When the tester runs test cases
+Then test results are validated across all environments
+```
+
+---
+Example 4:
+
+Original (Internal Consistency Violation: Benefit subject mismatch):
+```
+As a clerk, I want to approve vendor invoices, so that we can reduce accounting workload.
+
+Acceptance Criteria:
+
+Given invoices are submitted
+When the clerk approves an invoice
+Then the accounting workload is reduced
+```
+
+Rewrite (Internal consistency compliant):
+```
+As a clerk, I want to approve vendor invoices, so that I can manage my accounting tasks efficiently.
+
+Acceptance Criteria:
+
+Given invoices are submitted
+When the clerk approves an invoice
+Then the clerk’s accounting tasks are managed efficiently
+```
+---
+
+Example 5:
+
+Original (Internal Consistency Violation: Action–Benefit contradiction):
+```
+As a user, I want to disable notifications, so that I still receive critical alerts.
+
+Acceptance Criteria:
+
+Given notification settings exist
+When the user disables notifications
+Then critical alerts are still received
+```
+
+Rewrite (Internal consistency compliant):
+```
+As a user, I want to disable non-critical notifications, so that I still receive critical alerts.
+
+Acceptance Criteria:
+
+Given notification settings exist
+When the user disables non-critical notifications
+Then critical alerts continue to be delivered
+```

@@ -1,0 +1,102 @@
+Conceptually Sound Violation Rewrite Examples:
+
+Example 1:
+
+Original (Conceptually Sound Violation: Role concept incorrect, system used as role):
+As a monitoring service, I want to track API calls, so that I can analyze performance.
+
+Rewrite (Role concept correct):
+As a system administrator, I want to track API calls, so that I can analyze performance.
+
+---
+Example 2:
+
+Original (Conceptually Sound Violation: Intention concept incorrect, describes system behavior):
+As a user, I want the system to log my activities, so that I can track progress.
+
+Rewrite (Intention concept correct):
+As a user, I want to view my activity history, so that I can track progress.
+
+---
+Example 3:
+
+Original (Conceptually Sound Violation: Benefit concept incorrect, describes system outcome):
+As a customer, I want to submit feedback, so that the system improves quality.
+
+Rewrite (Benefit concept correct):
+As a customer, I want to submit feedback, so that my suggestions are considered.
+
+---
+Example 4:
+
+Original (Conceptually Sound Violation: Context concept incorrect, describes an action instead of pre-state):
+```
+As a teacher, I want to grade assignments, so that I can evaluate student performance.
+
+Acceptance Criteria (Original/Violation):
+
+When the teacher opens the grading page
+Then the teacher grades assignments
+```
+
+Rewrite (Context concept correct):
+```
+As a teacher, I want to grade assignments, so that I can evaluate student performance.
+
+Acceptance Criteria (Original/Violation):
+
+Given assignments have been submitted
+When the teacher opens the grading page
+Then the teacher grades assignments
+```
+
+---
+Example 5:
+
+Original (Conceptually Sound Violation: Event is a state, not a triggering action):
+```
+As a quality inspector, I want to review checklists, so that I can ensure compliance.
+
+Acceptance Criteria:
+
+Given the checklist has failures
+When the checklist is in failed state
+Then the inspector can ensure quality
+```
+
+Rewrite (Event concept correct):
+```
+As a quality inspector, I want to review checklists, so that I can ensure compliance.
+
+Acceptance Criteria: (Original/Violation):
+
+Given the checklist has failed items
+When the inspector opens the checklist
+Then the inspector can identify and correct the failures
+```
+
+---
+Example 6:
+
+Original (Conceptually Sound Violation: EO describes system intent, not observable outcome):
+```
+As a user, I want to submit my feedback, so that the system improves its service.
+
+Acceptance Criteria:
+
+Given the feedback form is available
+When the user submits feedback
+Then the system improves service quality
+```
+
+Rewrite (EO compliant):
+```
+As a user, I want to submit my feedback, so that the system improves its service.
+
+Acceptance Criteria:
+
+Given the feedback form is available
+When the user submits feedback
+Then the feedback is recorded in the system
+And the user receives a confirmation of submission
+```

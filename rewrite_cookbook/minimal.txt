@@ -1,0 +1,19 @@
+
+Minimal Violation Rewrite Examples:
+
+Example 1:
+
+Original (Minimal Violation: Extra details in parentheses):
+As a user, I want to import users through uploading a file (csv, excel, json).
+
+Rewrite (Minimal compliant):
+As a user, I want to import users through uploading a file.
+
+---
+Example 2:
+
+Original (Minimal Violation: Additional explanatory sentence):
+As a user, I want to view my profile, So that I can get to know my information recorded. Information should include name, email and address.
+
+Rewrite (Minimal compliant):
+As a user, I want to view my profile, So that I can get to know my information recorded.
