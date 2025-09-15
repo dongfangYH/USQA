@@ -85,7 +85,7 @@ Without both elements, the story cannot be regarded as well-formed.
 1. **Analyze the Feedback:** Carefully examine the **Quality Feedback Report**. Your primary goal is to address the specific **Reason for Violation** by rewriting the user story.
 2. **Review from Wiki (optional):** If the **Information from Wiki** is provided, you may use it to better understand the related business domain or module before rewriting. 
 3. **Preserve Core Intent:** You must NOT invent new requirements or delete existing ones. Your job is to restructure and refine how the requirements are expressed to meet the quality standards. The core functionality described in the original story must be fully preserved.
-4. **Handle Story Splitting:** If the **Rewrite Reference Examples** suggests splitting the story (due to violations like **Atomic**), you MUST generate multiple, complete, and independent user stories.
+4. **Handle Story Splitting (only when explicitly required):** If the **Rewrite Reference Examples** suggests splitting the story (due to violations like **Atomic**), you can generate multiple, complete, and independent user stories.
 
    * Each new story must have its own "As a / I want / So that" statement.
    * Distribute the original detailed description and Acceptance Criteria to the most relevant new story.
