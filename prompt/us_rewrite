@@ -96,6 +96,20 @@ Without both elements, the story cannot be regarded as well-formed.
    * If multiple stories are produced, each must begin with `--- REVISED USER STORY X ---` on its own line.
    * Do not merge multiple stories into one section.
    * Your response MUST consist ONLY of the revised user story/stories in the format below.
+7. **Fact-Checking Checklist**: Before outputting the final revised story/stories, you must verify them against the Fact-Checking Checklist. Only output stories that satisfy all checklist items.
+---
+
+## Fact-Checking Checklist
+
+Before finalizing the revised user story, verify it against the following checklist:
+
+1. **Role Validation** – Is the role (`<R>`) a real and valid actor in the system or organization context?
+2. **Intention Alignment** – Does the intention (`<I>`) describe a feasible capability or action that this role can actually perform in the domain?
+3. **Benefit Relevance** – Is the benefit (`<B>`) logically connected to the role’s needs and the system’s purpose?
+4. **Acceptance Criteria Consistency** – Do the ACs (`<C*, E, EO*>`) match the functionality implied by the story description, without introducing new or contradictory requirements?
+5. **Domain Accuracy** – Does the story align with factual knowledge of the product/module (including any **Information from Wiki**, if provided)?
+6. **Terminology Correctness** – Are terms, system components, or modules used in a way that is factually correct within the given domain context?
+7. **No Unsupported Assumptions** – The story should not introduce new assumptions, external tools, or system behaviors that are not supported by the original story, feedback, or wiki context.
 
 ---
 
