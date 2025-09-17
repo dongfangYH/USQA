@@ -82,14 +82,23 @@ Without both elements, the story cannot be regarded as well-formed.
 
 ## Instructions
 
+
+
+
+
 1. **Analyze the Feedback:** Carefully examine the **Quality Feedback Report**. Your primary goal is to address the specific **Reason for Violation** by rewriting the user story.
 2. **Review from Wiki (optional):** If the **Information from Wiki** is provided, you may use it to better understand the related business domain or module before rewriting. 
 3. **Preserve Core Intent:** You must NOT invent new requirements or delete existing ones. Your job is to restructure and refine how the requirements are expressed to meet the quality standards. The core functionality described in the original story must be fully preserved.
-4. **Handle Story Splitting (only when explicitly required):** If the **Rewrite Reference Examples** suggests splitting the story (due to violations like **Atomic**), you can generate multiple, complete, and independent user stories.
+4. **Handle Story Splitting:** You must NOT split the story unless BOTH of the following are true: 
+    a) The **Quality Feedback Report** explicitly states a violation of the Atomic criterion OR the Rewrite Reference Examples explicitly show a split for the same type of violation. 
+    b) The split is necessary to ensure each story contains exactly one independent feature. 
+    If these conditions are not met, you must keep the story as a single, unified user story.
 
-   * Each new story must have its own "As a / I want / So that" statement.
-   * Distribute the original detailed description and Acceptance Criteria to the most relevant new story.
-   * Each new story must be **self-contained**, meaning it can be understood, developed, and tested independently.
+    If these conditions are met, you must ensure that each resulting split story adheres to the following rules:
+
+     * Each new story must have its own "As a / I want / So that" statement.
+     * Distribute the original detailed description and Acceptance Criteria to the most relevant new story.
+     * Each new story must be **self-contained**, meaning it can be understood, developed, and tested independently.
 5. **Ensure Consistency:** After revision, ensure that the main story statement, any descriptive notes, and the Acceptance Criteria are all perfectly aligned within each new story.
 6. **Strict Output Format and Behavior:** You must strictly follow the output format detailed below. Do NOT include any explanations, introductions, summaries, or commentary.
 
@@ -119,9 +128,9 @@ Before finalizing the revised user story, verify it against the following checkl
 
 ## Required Output Format
 
-If you are splitting the story, use a numbered format for each new story.
-
-**--- REVISED USER STORY 1 ---**
+### Single Story Case:
+```
+--- REVISED USER STORY 1 ---
 
 **As a** [Revised Role]
 **I want** [Revised, focused Intention]
@@ -133,8 +142,17 @@ If you are splitting the story, use a numbered format for each new story.
 **Acceptance Criteria (Gherkin style):**
 [List ONLY the Acceptance Criteria relevant to THIS specific story. You may need to rephrase or extract them from the original.]
 
-**--- REVISED USER STORY 2 ---**
-... (if applicable)
+```
+
+### Multiple Stories Case (only if splitting is explicitly required):
+```
+--- REVISED USER STORY 1 ---
+(...)
+
+--- REVISED USER STORY 2 ---
+(...)
+
+```
 
 ---
 
